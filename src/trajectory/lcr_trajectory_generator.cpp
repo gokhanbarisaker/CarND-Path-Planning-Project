@@ -141,7 +141,7 @@ double LCRTrajectoryGenerator::adjust_speed(const double &speed,
                                             const double &object_ahead_distance,
                                             const double &object_ahead_speed)
 {
-    bool slower_object_ahead_detected = object_ahead_distance < (speed * 10) && object_ahead_speed < speed;
+    bool slower_object_ahead_detected = object_ahead_distance < (speed * 20) && object_ahead_speed < speed;
     double delta_speed = MAX_ACCELERATION *
                          POINT_DELTA_T *
                          (slower_object_ahead_detected ? -1 : 1);
