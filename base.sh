@@ -1,0 +1,1 @@
+docker build --no-cache --rm -f "Base.dockerfile" -t carnd-path-planning-base:latest .
